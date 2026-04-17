@@ -22,6 +22,6 @@ ENV vwpt=""
 ENV uuid="7fca4646-881b-4b9f-9c00-acecbeea7b96"
 ENV argo="vwpt" 
 
-EXPOSE 3000
+#EXPOSE 3000
 
 ENTRYPOINT ["/bin/bash", "-c", "vlpt=${vlpt} vmpt=${vmpt} vwpt=${vwpt} uuid=${uuid} argo=${argo} /app/argosbx.sh"]
