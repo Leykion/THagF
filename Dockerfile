@@ -16,6 +16,12 @@ ADD https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh /app/arg
 RUN chmod +x /app/argosbx.sh
 
 #ENV PORT=3000
+ENV vlpt=""
+ENV vmpt=""
+ENV vwpt=""
+ENV uuid="7fca4646-881b-4b9f-9c00-acecbeea7b96"
+ENV argo="vwpt" 
+
 EXPOSE 3000
 
-ENTRYPOINT ["/bin/bash", "/app/argosbx.sh"]
+ENTRYPOINT ["/bin/bash", "-c", "vlpt=${vlpt} vmpt=${vmpt} vwpt=${vwpt} uuid=${uuid} argo=${argo} /app/argosbx.sh"]
