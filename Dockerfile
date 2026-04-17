@@ -17,10 +17,10 @@ RUN chmod +x /app/argosbx.sh
 
 ENV PORT=3000
 ENV vlpt=""
-ENV vmpt=""
+ENV vmpt="13940"
 ENV vwpt=""
 ENV uuid="7fca4646-881b-4b9f-9c00-acecbeea7b96"
-ENV argo="vwpt" 
+ENV argo="vmpt"
 
 #EXPOSE 3000
 
