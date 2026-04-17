@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 ADD https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh /app/argosbx.sh
 RUN chmod +x /app/argosbx.sh
 
-#ENV PORT=3000
+ENV PORT=3000
 ENV vlpt=""
 ENV vmpt=""
 ENV vwpt=""
